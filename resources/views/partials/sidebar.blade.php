@@ -7,16 +7,16 @@
         class="p-4 flex items-center justify-between border-b-2 text-green-600"
     >
         <span id="sidebarTitle" class="text-xl font-bold">SPK-KSM</span>
-        <button
-            onclick="toggleSidebar()"
-            class="w-10 h-10 text-5xl hover:opacity-55 relative"
+        <div
+            {{-- onclick="toggleSidebar()" --}}
+            class="w-10 h-10 text-5xl relative"
         >
             <span
                 id="toggleIcon"
                 class="absolute bottom-0 transition duration-200"
                 >«</span
             >
-        </button>
+        </div>
     </div>
     <!-- Menu -->
     <nav class="px-2 flex-1 pt-3">
