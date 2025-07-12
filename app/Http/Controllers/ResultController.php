@@ -185,11 +185,11 @@ class ResultController extends Controller
         }
 
         // Validasi jumlah High Score maksimal 6
-        $highScoreCount = collect($labeledResults)->where('cluster', self::CLUSTER_LABELS[2])->count();
-        if ($highScoreCount > 6) {
-            return redirect()->route('homeroom-teacher.scores.index')
-                ->with('error', 'High Score clusters can have no more than 6 students. Currently: ' . $highScoreCount);
-        }
+        // $highScoreCount = collect($labeledResults)->where('cluster', self::CLUSTER_LABELS[2])->count();
+        // if ($highScoreCount > 6) {
+        //     return redirect()->route('homeroom-teacher.scores.index')
+        //         ->with('error', 'High Score clusters can have no more than 6 students. Currently: ' . $highScoreCount);
+        // }
 
         // Reset hasil lama
         SelectionResult::truncate();
